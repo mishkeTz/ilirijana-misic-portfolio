@@ -86,24 +86,29 @@ html{
 }
 
 .parallax-slider .img-container.one {
-  background:url(../images/header-image-one.webp);
+  background:url(../images/lusso/R0.png);
   background-position: center;
   background-size: cover;
 }
 
 .parallax-slider .img-container.two {
-  background:url(../images/header-image-two.webp);
+  background:url(../images/boat/R6-main.png);
   background-position: center;
   background-size: cover;
 }
 
 .parallax-slider .img-container.three {
-  background:url(../images/header-image-three.webp);
+  background:url(../images/luka/R3-main.png);
   background-position: center;
   background-size: cover;
 }
 .parallax-slider .img-container.four {
-  background:url(../images/header-image-four.webp);
+  background:url(../images/courses/house-1.1.png);
+  background-position: center;
+  background-size: cover;
+}
+.parallax-slider .img-container.five {
+  background:url(../images/aframe/hs3.png);
   background-position: center;
   background-size: cover;
 }
@@ -308,7 +313,7 @@ ul{
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(../images/about-pic.webp);
+  background: url(../images/contact-me.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -386,7 +391,7 @@ ul{
   overflow: hidden;
   height: 80vh;
 }
-.slides,.forest-slides,.wildlife-slides,.city-slides{
+.slides,.forest-slides,.wildlife-slides,.city-slides,.aframe-slides{
   width: 100%;
   height: 100vh;
   left: 0;
@@ -418,7 +423,7 @@ ul{
 .controls button:hover img{
   transform: scale(1.4);
 }
-.slides img,.forest-slides img,.wildlife-slides img,.city-slides img{
+.slides img,.forest-slides img,.wildlife-slides img,.city-slides img, .aframe-slides img{
   width: auto;
   max-height: 70vh;
   position: absolute;
@@ -444,8 +449,10 @@ z-index: 2;
   padding:100px;
   padding-left: 150px;
   padding-right: 150px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 15px;
 }
-.marine-project,.forest-project,.wildlife-project,.city-project{
+.marine-project,.forest-project,.wildlife-project,.city-project,.aframe-project{
   display: none;
   transform: scale(.9);
   overflow: hidden;
@@ -840,7 +847,7 @@ display: none;
   display: none;
 }
 #about{
-  background: url(../images/about-pic.webp);
+  background: url(../images/contact-me.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -866,7 +873,7 @@ display: none;
   font-family: brook;
   font-size: 16px;
 }
-.slides img,.forest-slides img,.wildlife-slides img,.city-slides img{
+.slides img,.forest-slides img,.wildlife-slides img,.city-slides img, .aframe-slides img{
   width: auto;
   max-width: 95%;
   max-height: auto;
@@ -979,7 +986,7 @@ FOR EXTRA SMALL DEVICES
     display: none;
   }
   #about{
-    background: url(../images/about-pic.webp);
+    background: url(../images/contact-me.jpg);
     background-position: center;
     background-size: cover;
   }
@@ -1013,7 +1020,7 @@ FOR EXTRA SMALL DEVICES
     height: 16px;
     width: 2px;
   }
-  .slides img,.forest-slides img,.wildlife-slides img,.city-slides img,.wildlife-slides img{
+  .slides img,.forest-slides img,.wildlife-slides img,.city-slides img,.wildlife-slides img, .aframe-slides img{
     width: 95%;
     max-height: auto;
     position: absolute;
@@ -1098,11 +1105,11 @@ FOR TABLETS
   display: none;
 }
 #about{
-  background: url(../images/about-pic.webp);
+  background: url(../images/contact-me.jpg);
   background-position: center;
   background-size: cover;
 }
-.slides img,.forest-slides img,.wildlife-slides img,.city-slides img{
+.slides img,.forest-slides img,.wildlife-slides img,.city-slides img, .aframe-slides img{
   width: auto;
   max-width: 95%;
   max-height: auto;
@@ -1140,14 +1147,8 @@ FOR TABLETS
 
 /* global */
 
-.project-description-main {
-  background-color: rgba(0,0,0,0.8);
+.contact-me-name {
+  background-color: rgba(0,0,0,1);
   padding: 12px 14px;
   border-radius: 5px;
-}
-
-.project-description-main p {
-  font-family: sans-serif;
-  margin-bottom: 0;
-  font-size: 16px;
 }

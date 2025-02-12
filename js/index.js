@@ -216,6 +216,9 @@ new Swiper('#projects .swiper-container', {
       gsap.to('.marine-project',.5,{scale:.9});
       gsap.to('.marine-project',0,{width:'100%',height:'100vh',overflow:'hidden'});
       gsap.to('.marine-project',0,{display:'none',delay:.7});
+      gsap.to('.aframe-project',.5,{scale:.9});
+      gsap.to('.aframe-project',0,{width:'100%',height:'100vh',overflow:'hidden'});
+      gsap.to('.aframe-project',0,{display:'none',delay:.7});
       gsap.to('#about',.5,{scale:.9});
       gsap.to('#about',0,{width:'100%',height:'100vh',overflow:'hidden'});
       gsap.to('#about',0,{display:'none',delay:.7});
@@ -262,6 +265,16 @@ new Swiper('#projects .swiper-container', {
       gsap.to('#home',0,{display:'none',delay:.7});
       gsap.to('.city-project',0,{display:'block',delay:.7})
       gsap.to('.city-project',.5,{scale:1,delay:1.1})
+      gsap.to('.project-name',.5,{opacity:0,delay:2.5})
+      gsap.to('#breaker',{display:'block'})
+      gsap.to('#breaker',0,{display:'none',delay:1.7});
+    })
+    $('.aframe-project-link').on('click',function(){
+      gsap.to('#home',.5,{scale:.9});
+      gsap.to('#home',0,{width:'100%',height:'100vh',overflow:'hidden'});
+      gsap.to('#home',0,{display:'none',delay:.7});
+      gsap.to('.aframe-project',0,{display:'block',delay:.7})
+      gsap.to('.aframe-project',.5,{scale:1,delay:1.1})
       gsap.to('.project-name',.5,{opacity:0,delay:2.5})
       gsap.to('#breaker',{display:'block'})
       gsap.to('#breaker',0,{display:'none',delay:1.7});
@@ -319,6 +332,16 @@ new Swiper('#projects .swiper-container', {
       gsap.to('.city-project',.5,{scale:.9});
       gsap.to('.city-project',0,{width:'100%',height:'100vh',overflow:'hidden'});
       gsap.to('.city-project',0,{display:'none',delay:.7});
+      gsap.to('#home',0,{display:'block',delay:.7})
+      gsap.to('#home',.5,{scale:1,delay:1.1})
+      gsap.to('.project-name',.5,{opacity:1,delay:1})
+      gsap.to('#breaker',{display:'block'})
+      gsap.to('#breaker',0,{display:'none',delay:1.7});
+    })
+    $('.aframe-close').on('click',function(){
+      gsap.to('.aframe-project',.5,{scale:.9});
+      gsap.to('.aframe-project',0,{width:'100%',height:'100vh',overflow:'hidden'});
+      gsap.to('.aframe-project',0,{display:'none',delay:.7});
       gsap.to('#home',0,{display:'block',delay:.7})
       gsap.to('#home',.5,{scale:1,delay:1.1})
       gsap.to('.project-name',.5,{opacity:1,delay:1})
